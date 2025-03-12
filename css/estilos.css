@@ -1,3 +1,7 @@
+.font {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
 #aprendiendoaprogramar{
     color: rgb(7, 6, 6);
     font-size: 70px;
@@ -42,4 +46,8 @@ a:hover{
 
 a:active{
     color: green;
+}
+
+ul{
+    list-style-image: url(../imagenes/pequeñas/menu.png);
 }
