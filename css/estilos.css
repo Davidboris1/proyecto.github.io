@@ -1,8 +1,8 @@
 .font {
     font-family: Georgia, "Times New Roman", serif;
-  }
-  
-#aprendiendoaprogramar{
+}
+
+#aprendiendoaprogramar {
     color: rgb(7, 6, 6);
     font-size: 40px;
     background-color: aqua;
@@ -14,8 +14,8 @@
     width: 1200px;
 }
 
-#navegation{
-    
+#navegation {
+
     border-radius: 20px;
     border: 2px solid #000;
     padding: 0px 0px 0px 0px;
@@ -23,46 +23,67 @@
     text-align: left;
     background-color: #f0f0f0;
     background-clip: text;
-    
-  }
+
+}
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     text-align: center;
-  }
+}
 
-a:link{
+a:link {
     color: green;
 }
 
-a:visited{
+a:visited {
     color: green;
 }
 
-a:hover{
+a:hover {
     color: green;
 }
 
-a:active{
+a:active {
     color: green;
 }
 
-ul{
+ul {
     list-style-image: url(../imagenes/pequeñas/menu.bmp);
 }
 
-#mb-2{
+#mb-2 {
     border: solid 1.5px red;
     background-color: lightskyblue;
 }
 
-#mb-00{
-    display: grid; 
-    grid-auto-flow: column; 
+#mb-00 {
+    display: grid;
+    grid-auto-flow: column;
     list-style-type: none;
-    font-size: 25px;    
+    font-size: 25px;
 }
+
 li {
     margin-right: 10px;
+}
+
+#infocontact {
+    text-align: center;
+    position: relative;
+    background-color: aqua;
+    width: 500px;
+    left: 400px;
+    box-sizing: border-box;
+}
+
+#infocontact h1 {
+    text-align: center;
+}
+
+#yotaspelotas {
+    width: 25%;
+    position: absolute;
+    top: 35px;
+    right: 10px;
 }
