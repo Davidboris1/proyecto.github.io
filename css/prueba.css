@@ -1,48 +1,103 @@
+:root {
+  --font-size: 27px;
+  --line-height: 37.5px;
+}
+
+/* BEGIN (write your solution here) */
+@font-face{
+  font-family: caveat;
+  src: url(../assets/fonts/caveat.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: marckscript;
+  src: url(../assets/fonts/marckscript.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* END */
+
 body {
-    width: 700px;
-    margin: 0 auto;
-    padding: 100px 0;
-  
-    font-family: serif;
-  
-    background-color: #eee;
-  }
-  
-  /* BEGIN (write your solution here) */
-  h1{
-    color: #646464;
-    font-weight: bold;
-    font-size: 70px;
-    text-align: center;
-    font-style: normal;
-  }
-  
-  h2{
-    color: #646464;
-    text-align: center;
-    font-size: 40px;
-    font-style: normal;
-  }
-  
-  h3{
-    color: #646464;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-  }
-  
-  h4{
-    color: #646464;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-  }
-  
-  p{
-    text-align: justify;
-    color: #333;
-    font-size: 16px;
-  }
-  
-  /* END */
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  background-color: #4db6ac;
+}
+
+.notebook {
+  position: relative;
+  width: 750px;
+  height: 700px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  word-spacing: 6px;
+  background-color: #fff;
+  box-shadow: 4px 6px 16px 3px #009688;
+}
+
+.notebook::before {
+  position: absolute;
+  top: 0;
+  left: 50px;
+
+  width: 2px;
+  height: 100%;
+
+  background-color: #ff5722;
+
+  content: "";
+}
+
+/* BEGIN (write your solution here) */
+.paper{
+  height: 100vh; /* Ocupa toda la altura disponible */
+  padding: 0 60px; /* Márgenes internos de 60px a izquierda y derecha */
+  background-image: linear-gradient(to bottom, #ffffff 1%, #80cbc4 1%, #ffffff 2%, #80cbc4 2%, #ffffff 3%, #80cbc4 3%, #ffffff 4%, #80cbc4 4%, #ffffff 5%, #80cbc4 5%, #ffffff 6%, #80cbc4 6%, #ffffff 7%, #80cbc4 7%, #ffffff 8%, #80cbc4 8%, #ffffff 9%, #80cbc4 9%, #ffffff 10%); /* Gradiente para simular rayas */
+  background-size: 100% 30px; /* Ajusta el tamaño de las rayas */
+  font-size: var(--font-size); /* Tamaño de fuente (ajustable) */
+  line-height: var(--line-height); /* Interlineado (ajustable) */
+}
+
+pre{
+  margin: 0;
+  padding-top: 10px;
+  font-family: caveat;
+}
+
+.author{
+  font-family: marckscript;
+  text-align: right;
+}
+/* END */
+
+
+
+
+
+
+
+
+rgba(255, 255, 255, 0.5) 0%, 
+    rgba(255, 255, 255, 0.5) 10%, 
+    #80cbc4 10%, 
+    #80cbc4 10.1%, 
+    rgba(255, 255, 255, 0.5) 10.1%, 
+    rgba(255, 255, 255, 0.5) 40%, 
+    #80cbc4 40%, 
+    #80cbc4 50%, 
+    rgba(255, 255, 255, 0.5) 50%, 
+    rgba(255, 255, 255, 0.5) 60%, 
+    #80cbc4 60%, 
+    #80cbc4 70%, 
+    rgba(255, 255, 255, 0.5) 70%, 
+    rgba(255, 255, 255, 0.5) 80%, 
+    #80cbc4 80%, 
+    #80cbc4 81%, 
+    rgba(255, 255, 255, 0.5) 81%, 
+    rgba(255, 255, 255, 0.5) 100%, 
+    #80cbc4 100%
